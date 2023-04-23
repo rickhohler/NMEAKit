@@ -1,0 +1,24 @@
+
+name: NMEAKit Tests
+
+on: [push]
+
+jobs:
+  build:
+    name: NMEAKit Swift ${{ matrix.swift }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [macos-latest]
+        swift: ["5.7.3", "5.8.0"]
+
+    steps:
+    - uses: swift-actions/setup-swift@v1
+      with:
+        swift-version: ${{ matrix.swift }}
+    - uses: actions/checkout@v3
+    - name: Build
+      run: swift build
+    - name: Run tests
+      run: swift test

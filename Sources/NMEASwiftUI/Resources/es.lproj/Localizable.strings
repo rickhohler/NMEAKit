@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  
+
+  Created by Rick Hohler on 2023-04-19.
+  
+*/
+
+// ActiveSatellitesData
+"mode1" = "Modo Uno";
+"mode2" = "Modo Dos";
+"manual" = "Manual";
+"automatic" = "Automática";
+"one" = "Uno";
+"two" = "Dos";
+"three" = "Tres";
+
+// ReceiverSignalData
+"signalStrength" = "Intensidad de Señal";
+"signalToNoiseRatio" = "Relación Señal a Ruido";
+"beaconFrequency" = "Frecuencia de Baliza";
+"beaconBitRate" = "Tasa de Bits de Baliza";
+"channelNumber" = "Numero de Canal";
+
+// Status
+"status" = "Estado";
+"valid" = "Válido";
+"notvalid" = "No válido";
+"unknown" = "Desconocido";
